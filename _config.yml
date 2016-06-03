@@ -6,7 +6,7 @@ url: "http://entest2.minibrary.com" # the base hostname & protocol for your site
 # User settings
 username: Admin
 user_description: Helpdesk/Windows/Linux/Network System Engineer
-user_title: Admin
+user_title: Helpdesk/Windows/Linux/Network System Engineer
 email: minibrary@gmail.com
 twitter_username: minibrary
 github_username:  minibrary
