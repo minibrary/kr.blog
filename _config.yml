@@ -1,17 +1,17 @@
 # Site settings
-description: A blog about lorem ipsum dolor sit amet
+description: My Personal Mini Library♪
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://entest2.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+username: Admin
+user_description: Helpdesk/Windows/Linux/Network System Engineer
+user_title: Admin
+email: minibrary@gmail.com
+twitter_username: minibrary
+github_username:  minibrary
+gplus_username:  minibrary
+disqus_username: minibrary
 
 # Build settings
 markdown: kramdown
@@ -40,3 +40,6 @@ links:
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
+
+# Localization
+encoding: utf-8

@@ -30,5 +30,14 @@
     "jeet": "^6.1.2",
     "kouto-swiss": "^0.11.6",
     "rupture": "^0.6.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minibrary/en2.blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minibrary/en2.blog/issues"
+  },
+  "homepage": "https://github.com/minibrary/en2.blog#readme"
 }
