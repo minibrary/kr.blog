@@ -44,3 +44,4 @@ exclude: ['package.json', 'src', 'node_modules']
 
 # Localization
 encoding: utf-8
+timezone: Asia/Tokyo

@@ -132,7 +132,7 @@ initpost_content() {
 echo "---"
 echo "layout: post"
 echo "title: \"${POST_TITLE}\""
-echo "date: ${CURRENT_DATE} ${TIME}"
+echo "date: ${CURRENT_DATE} ${TIME} +0900"
 echo "image: '/assets/img/'"
 echo "description:"
 echo "tags:"
