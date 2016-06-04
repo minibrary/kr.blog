@@ -14,6 +14,7 @@ img:hover {
 
 
 pre {
+    white-space: pre-wrap;
     width: auto;
     max-width: 50rem;
     float: none;
@@ -24,4 +25,8 @@ pre {
     padding-right: 0;
     padding: 1.25rem;
     margin: 0 auto 1.875rem;
+    overflow: auto;
+    overflow-x:hidden;
+    word-break: break-all;
+    word-wrap: break-word;
 }
