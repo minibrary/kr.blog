@@ -11,3 +11,17 @@ img:hover {
     opacity: 0.6;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+
+
+pre {
+    width: auto;
+    max-width: 50rem;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 1.25rem;
+    margin: 0 auto 1.875rem;
+}
