@@ -31,7 +31,9 @@
     "kouto-swiss": "^0.11.6",
     "rupture": "^0.6.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lightbox2": "^2.8.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/minibrary/en2.blog.git"
