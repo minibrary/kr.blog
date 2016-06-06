@@ -2,7 +2,7 @@
 title: Minibrary
 description: My Personal Mini Library♪
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://entest2.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "http://entest.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Admin
