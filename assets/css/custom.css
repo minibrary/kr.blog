@@ -30,3 +30,11 @@ pre {
     word-break: break-all;
     word-wrap: break-word;
 }
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #C7254E;
+    background-color: #f9F2F4
+    border-radius:  4px;
+}
