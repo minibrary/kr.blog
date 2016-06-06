@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://entest.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Admin
+username: MiNi♪
 user_description: 'Engineer @ "Helpdesk / Windows / Linux / Network" Systems'
 user_title: 'Engineer @ "Helpdesk / Windows / Linux / Network" Systems'
 email: minibrary@gmail.com
