@@ -29,6 +29,8 @@ pre {
     overflow-x:hidden;
     word-break: break-all;
     word-wrap: break-word;
+    border-radius: 5px;
+    border-left: 10px solid #F4FA58;
 }
 
 .post-content
