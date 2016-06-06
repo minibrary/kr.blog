@@ -31,10 +31,12 @@ pre {
     word-wrap: break-word;
 }
 
-code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #C7254E;
-    background-color: #f9F2F4
-    border-radius:  4px;
+.post-content
+  p
+    code {
+      padding: 2px 4px;
+      font-size: 90%;
+      color: #C7254E;
+      background-color: #f9F2F4
+      border-radius:  4px;
 }
