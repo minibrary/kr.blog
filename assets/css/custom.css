@@ -48,9 +48,3 @@ pre {
 .author .name a { color: #FF8000 }
 
 .post-content { padding: 3.5rem 0; }
-
-@media only screen and (max-width: 37.5rem)
-.search-list {
-    height: 380px;
-    overflow: hidden;
-}
