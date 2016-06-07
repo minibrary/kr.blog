@@ -42,8 +42,15 @@ pre {
       background-color: #f9F2F4;
       border-radius:  4px;
 }
+
 .post-content h1, h2, h3, h4 { color: #FF8000; }
 
 .author .name a { color: #FF8000 }
 
 .post-content { padding: 3.5rem 0; }
+
+@media only screen and (max-width: 37.5rem)
+.search-list {
+    height: 380px;
+    overflow: hidden;
+}
