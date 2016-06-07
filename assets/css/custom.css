@@ -54,3 +54,5 @@ pre {
         margin-right: auto;
         text-align: -webkit-center;
 }
+
+.post-item .content .description { word-break: break-all; }
