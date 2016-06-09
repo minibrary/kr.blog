@@ -1,0 +1,130 @@
+BOOT
+pi
+raspberry
+sudo passwd root
+
+sudo apt update
+sudo apt upgrade
+sudo raspi-config
+
+sudo nano /etc/hostname
+sudo nano /etc/hosts
+sudo init 6
+
+sudo apt install vnstat htop ufw vsftpd chkconfig
+
+sudo vnstat -u
+su
+crontab -e
+>> 0 * * * * vnstat -u
+
+
+sudo ufw default deny
+sudo ufw allow 21/tcp && sudo ufw allow 22/tcp && sudo ufw allow 80/tcp && sudo ufw allow 443/tcp
+sudo ufw logging on
+sudo ufw enable
+sudo ufw status
+
+sudo install mariadb-server
+>> Input Password
+mysql -uroot -p
+create database minibrary;
+
+sudo apt install make libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libxslt1.1 libgd2-xpm-dev libgeoip-dev
+
+wget http://nginx.org/download/nginx-1.8.1.tar.gz
+tar xzf nginx-1.8.1.tar.gz
+rm nginx-1.8.1.tar.gz
+cd nginx-1.8.1
+
+sudo ./configure --prefix=/usr/share/nginx --conf-path=/etc/nginx/nginx.conf --http-log-path=/var/log/nginx/access.log --error-log-path=/var/log/nginx/error.log --lock-path=/var/lock/nginx.lock --pid-path=/run/nginx.pid --http-uwsgi-temp-path=/var/lib/nginx/uwsgi --with-debug --with-pcre-jit --with-ipv6 --with-http_ssl_module --with-http_stub_status_module --with-http_realip_module --with-http_auth_request_module --with-http_addition_module --with-http_dav_module --with-http_geoip_module --with-http_gzip_static_module --with-http_image_filter_module --with-http_spdy_module --with-http_sub_module --with-http_xslt_module --with-mail --with-mail_ssl_module
+
+sudo make
+sudo make install
+
+sudo mkdir /var/lib/nginx
+sudo mkdir /var/lib/nginx/wusgi
+sudo /usr/share/nginx/sbin/nginx
+sudo /usr/share/nginx/sbin/nginx -s quit
+
+
+sudo nano /etc/init.d/nginx
+
+#! /bin/sh
+ 
+### BEGIN INIT INFO
+# Provides:          nginx
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the nginx web server
+# Description:       starts nginx using start-stop-daemon
+### END INIT INFO
+ 
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/share/nginx/sbin/nginx
+NAME=nginx
+DESC=nginx
+ 
+test -x $DAEMON || exit 0
+ 
+# Include nginx defaults if available
+if [ -f /etc/default/nginx ] ; then
+        . /etc/default/nginx
+fi
+ 
+set -e
+ 
+case "$1" in
+  start)
+        echo -n "Starting $DESC: "
+        start-stop-daemon --start --quiet --pidfile /var/run/nginx.pid 
+                --exec $DAEMON -- $DAEMON_OPTS
+        echo "$NAME."
+        ;;
+  stop)
+        echo -n "Stopping $DESC: "
+        start-stop-daemon --stop --quiet --pidfile /var/run/nginx.pid 
+                --exec $DAEMON
+        echo "$NAME."
+        ;;
+  restart|force-reload)
+        echo -n "Restarting $DESC: "
+        start-stop-daemon --stop --quiet --pidfile 
+                /var/run/nginx.pid --exec $DAEMON
+        sleep 1
+        start-stop-daemon --start --quiet --pidfile 
+                /var/run/nginx.pid --exec $DAEMON -- $DAEMON_OPTS
+        echo "$NAME."
+        ;;
+  reload)
+      echo -n "Reloading $DESC configuration: "
+      start-stop-daemon --stop --signal HUP --quiet --pidfile /var/run/nginx.pid 
+          --exec $DAEMON
+      echo "$NAME."
+      ;;
+  *)
+        N=/etc/init.d/$NAME
+        echo "Usage: $N {start|stop|restart|force-reload}" >&2
+        exit 1
+        ;;
+esac
+ 
+exit 0
+
+
+sudo chmod +x /etc/init.d/nginx
+sudo systemctl daemon-reload
+sudo update-rc.d nginx defaults
+
+
+http://ftp.jp.debian.org/debian/pool/main/p/php7.0/
+wget http://ftp.jp.debian.org/debian/pool/main/p/php7.0/php7.0_7.0.4-7_all.deb
+wget http://ftp.jp.debian.org/debian/pool/main/p/php7.0/php7.0-fpm_7.0.4-7_armhf.deb
+wget http://ftp.jp.debian.org/debian/pool/main/p/php7.0/php7.0-common_7.0.4-7_armhf.deb
+wget http://ftp.jp.debian.org/debian/pool/main/p/php-defaults/php-common_35_all.deb
+wget http://ftp.jp.debian.org/debian/pool/main/o/openssl/libssl1.0.2_1.0.2g-1_armhf.deb
+
+
+dpkg -i php7.0-common_7.0.4-7_armhf.deb
