@@ -58,9 +58,6 @@ pre {
 .post-item .content .description { word-break: break-all; }
 
 .mylogo { 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        opacity: 1.0;
-        filter: alpha(opacity=40); /* For IE8 and earlier */
+        box-shadow: none;
+        margin-top: 20px;
 }
