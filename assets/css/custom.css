@@ -59,5 +59,7 @@ pre {
 
 .mylogo { 
         box-shadow: none;
-        margin-top: 20px;
+        max-height: 36px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
