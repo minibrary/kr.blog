@@ -79,3 +79,5 @@ pre {
 	top: 64px;
 	position: relative;
 }
+
+.content, .post { margin-top: 64px; }
