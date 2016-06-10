@@ -59,7 +59,12 @@ pre {
 
 .mylogo { 
         box-shadow: none;
-        max-height: 36px;
+        max-height: 48px;
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
+
+.bar-header { height: 4rem; }
+
+
