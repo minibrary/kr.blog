@@ -32,7 +32,7 @@ compress_html:
 links:
   - title: 블로그홈
     url: /
-  - title: 연재 모음
+  - title: 튜토리얼
     url: /series
   - title: 태그
     url: /tags
