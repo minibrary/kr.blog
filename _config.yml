@@ -1,11 +1,11 @@
 # Site settings
-title: Minibrary
-description: My Personal Mini Library♪
+title: 미니브러리
+description: 나의 작은 도서관♪
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://en.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "http://krtest.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: MiNi♪
+username: 미니♪
 user_description: 'Engineer @ "Helpdesk / Windows / Linux / Network" Systems'
 user_title: 'Engineer @ "Helpdesk / Windows / Linux / Network" Systems'
 email: minibrary@gmail.com
@@ -30,13 +30,13 @@ compress_html:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: 블로그홈
     url: /
-  - title: Series
+  - title: 연재 모음
     url: /series
-  - title: Tags
+  - title: 태그
     url: /tags
-  - title: About Me
+  - title: 프로필
     url: /about
 
 # exclude my node related stuff
