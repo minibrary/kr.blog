@@ -31,7 +31,7 @@
     var defaults = {
         speed: 500,
         easing: 'easeInOutCubic',
-        offset: -64,
+        offset: 0,
         updateURL: true,
         callbackBefore: function () {},
         callbackAfter: function () {}
@@ -393,7 +393,7 @@
         // Reset varaibles
         settings = null;
         eventTimeout = null;
-        fixedHeader = null;
+        fixedHeader = 64;
     };
 
     /**
