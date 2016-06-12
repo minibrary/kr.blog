@@ -86,4 +86,4 @@ code, kbd, pre, samp { font-family: Consolas; }
 
 .header-site .content, .header-post .content { top: 35%; }
 
-section.content { position: relative; top: 64px; }
+section.content, section.post { position: relative; top: 64px; }
