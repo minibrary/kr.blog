@@ -45,9 +45,13 @@ pre {
 
 .post-content h1, h2, h3, h4 { color: #f55567; }
 
-.author .name a { color: #FF8000 }
+.post-content blockquote { word-break: break-word; }
 
 .post-content { padding: 3.5rem 0; }
+
+.author .name a { color: #FF8000 }
+
+
 
 .adsense {
         margin-left: auto;
