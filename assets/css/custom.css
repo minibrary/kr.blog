@@ -43,6 +43,8 @@ pre {
       border-radius:  4px;
 }
 
+code, kbd, pre, samp { font-family: Consolas; }
+
 .post-content h1, h2, h3, h4 { color: #f55567; }
 
 .post-content blockquote { word-break: break-word; }
@@ -50,8 +52,6 @@ pre {
 .post-content { padding: 3.5rem 0; }
 
 .author .name a { color: #FF8000 }
-
-
 
 .adsense {
         margin-left: auto;
