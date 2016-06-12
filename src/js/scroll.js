@@ -394,7 +394,7 @@
         // Reset varaibles
         settings = null;
         eventTimeout = null;
-        fixedHeader = 64;
+        fixedHeader = null;
     };
 
     /**
