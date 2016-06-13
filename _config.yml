@@ -2,7 +2,7 @@
 title: 미니브러리
 description: 나의 작은 도서관♪
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://krtest.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "http://kr.minibrary.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: MiNi
