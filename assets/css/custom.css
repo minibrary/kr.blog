@@ -87,3 +87,18 @@ code, kbd, pre, samp { font-family: Consolas; }
 .header-site .content, .header-post .content { top: 40%; max-width: 95%; width: 95%; }
 
 section.content, section.post { position: relative; top: 64px; }
+
+
+
+
+
+@font-face {
+  font-family: 'GodoM';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/font/GodoM.woff2) format('woff2'),
+       url(/assets/font/GodoM.woff) format('woff');
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6, li, p {font-family:'GodoM';}
